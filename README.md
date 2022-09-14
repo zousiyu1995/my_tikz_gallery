@@ -14,6 +14,22 @@ cutline
 
 ![cutline](./three-phase_system_I/cutline.svg)
 
+epsilon
+
+![epsilon](./three-phase_system_I/epsilon.svg)
+
+dpore
+
+![dpore](./three-phase_system_I/dpore.svg)
+
+deltaEL
+
+![deltaEL](./three-phase_system_I/deltaEL.svg)
+
+ET
+
+![ET](./three-phase_system_I/ET.svg)
+
 three-phase system II
 
 ![three-phase system II](./three-phase_system_II/main.svg)
