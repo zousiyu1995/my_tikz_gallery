@@ -4,8 +4,8 @@
     \setmainfont{Times New Roman}
 
 \usepackage[dvipsnames]{xcolor}
-    \definecolor{GDLcolor}{HTML}{a6a6a6}
-    \definecolor{ELcolor}{HTML}{f3f1c5}
+    \definecolor{GDLcolor}{HTML}{A6A6A6}
+    \definecolor{ELcolor}{HTML}{E8E490}
 
 \usepackage{tikz}
     \usetikzlibrary{math}
@@ -27,7 +27,7 @@
                             \deltaEL=#1;
                         };
 
-                        \fill [ELcolor] (0, 0) rectangle (\deltafig, \deltaEL);
+                        \fill [ELcolor, opacity=0.7] (0, 0) rectangle (\deltafig, \deltaEL);
                         \foreach \i in {0, ..., 2} {%
                                 \fill [GDLcolor] ({\dpore/2+\i*(\deltawall+\dpore)}, 0) rectangle ++(\deltawall, -\deltaGDL);
                             }

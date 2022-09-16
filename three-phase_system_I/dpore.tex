@@ -4,8 +4,8 @@
     \setmainfont{Times New Roman}
     \setsansfont{TeX Gyre Heros}
 \usepackage[dvipsnames]{xcolor}
-    \definecolor{GDLcolor}{HTML}{a6a6a6}
-    \definecolor{ELcolor}{HTML}{f3f1c5}
+    \definecolor{GDLcolor}{HTML}{A6A6A6}
+    \definecolor{ELcolor}{HTML}{E8E490}
 \usepackage{tikz}
     \usetikzlibrary{math, calc}
 \usepackage{siunitx}
@@ -23,16 +23,19 @@
 
                         \begin{scope}
                             \clip (0, 0) rectangle ++(\deltafig, \deltafig);
+                            GDL
                             \fill [GDLcolor] (0, 0) rectangle ++(\deltafig, \deltafig);
+                            % pore
                             \foreach \i in {0, ..., \numpore} {%
                                     \foreach \j in {0, ..., \numpore} {%
                                             \fill [white] ({\i*(\dpore+\deltawall)}, {\j*(\dpore+\deltawall)}) circle (\dpore);
                                         }
                                 };
-                            \fill [ELcolor, opacity=0.4] (0, 0) rectangle ++(\deltafig, \deltafig);
+                            % EL
+                            \fill [ELcolor, opacity=0.5] (0, 0) rectangle ++(\deltafig, \deltafig);
                         \end{scope}
 
-                        \node at (\deltafig/2, \deltafig) [above] {\fontsize{8pt}{0pt}\selectfont\ensuremath{d_\mathrm{pore} = \qty{#3}{\nm}}};
+                        \node at (\deltafig/2, \deltafig) [above] {\fontsize{7pt}{0pt}\selectfont\ensuremath{d_\mathrm{pore} = \qty{#3}{\nm}}};
                         \node at (\deltafig/2, \deltafig/2) [opacity=0.6] {\sffamily\bfseries\color{red}\fontsize{30pt}{30pt}\selectfont #4};
                     }
             }

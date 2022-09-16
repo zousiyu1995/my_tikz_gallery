@@ -8,6 +8,9 @@
 
 three-phase system I
 
+GDLcolor: #A6A6A6
+ELcolor: #E8E490
+
 ![three-phase system I](./three-phase_system_I/main.svg)
 
 cutline
