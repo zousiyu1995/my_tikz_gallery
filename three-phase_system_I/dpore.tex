@@ -5,6 +5,7 @@
 \usepackage[dvipsnames]{xcolor}
     \definecolor{GDLcolor}{HTML}{A6A6A6}
     \definecolor{ELcolor}{HTML}{E8E490}
+    \definecolor{fontcolor}{HTML}{D62629}
 \usepackage{tikz}
     \usetikzlibrary{math, calc}
 \usepackage{siunitx}
@@ -39,7 +40,7 @@
                         \end{scope}
 
                         \node at (\deltafig/2, \deltafig-0.05) [above] {\ensuremath{#3}};
-                        \node at (\deltafig/2, \deltafig/2) [opacity=0.4] {\sffamily\bfseries\color{red}\fontsize{30pt}{30pt}\selectfont #4};
+                        \node at (\deltafig/2, \deltafig/2) [opacity=0.4] {\sffamily\bfseries\color{fontcolor}\fontsize{30pt}{30pt}\selectfont #4};
                     }
             }
     }
